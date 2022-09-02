@@ -24,6 +24,7 @@ export default function TextForm(props) {
   function handletoCopy(){
     let text = document.getElementById("mybox")
     text.select();
+    text.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(text)
     document.getSelection().removeAllRanges();
     props.showAlert("Text copied to Clipboard","success")
