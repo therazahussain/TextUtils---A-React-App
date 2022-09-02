@@ -4,16 +4,6 @@ import PropTypes from 'prop-types'
 export default function TextForm(props) {
   const [text,setText] = useState("")
 
-
-  function wordCount(){
-    let count = text.length;
-    if(count===0){
-    }else{
-      count = text.trim().split(/\s+/).length;
-    }
-    return count;
-  }
-
   function handletoUp(){
     let newText = text.toUpperCase();
     setText(newText)
@@ -61,7 +51,7 @@ export default function TextForm(props) {
     </div>
     <div className="container my-2" style={{color:props.mode==="dark"?"white":"black"}}>
       <h2>Your text Summary</h2>
-      <p>{wordCount()} words and {text.length} characters</p>
+      <p>{text.split(" ").filter(word => {return(word.length !== 0)}).length} words and {text.length} characters</p>
       <p>{0.008 * text.split(" ").length} Minutes to read </p>
       <h2>Preview</h2>
       <p>{text.length>0?text:"Enter something to Preview it here."}</p>
