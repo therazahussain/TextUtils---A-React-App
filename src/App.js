@@ -3,7 +3,7 @@ import React,{useState} from 'react'
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
-// import About from './components/About';
+import About from './components/About';
 // import {
 //   BrowserRouter,
 //   Routes,
@@ -40,7 +40,8 @@ function App() {
       <Navbar title = "TextUtils" mode ={mode} toggleMode={toggleMode}/>
       <Alert alert = {alert}/>
       <div className="container my-3">
-        <TextForm heading="Enter The Text to Analyze" mode={mode} showAlert = {showAlert}/>
+        <TextForm heading="Try TextUtils - Word and Character Counter | Analyze the Text" mode={mode} showAlert = {showAlert}/>
+        {/* <About mode={mode} /> */}
       </div>
       {/* <BrowserRouter>
         <Navbar title = "TextUtils" mode={mode} toggleMode={toggleMode}/>

@@ -18,17 +18,25 @@ export default function TextForm(props) {
 
   function handletoCl(){
     setText("")
-    props.showAlert("Cleared Box","success")
+    props.showAlert("Text Box Cleared","success")
+  }
+
+  function handletoCopy(){
+    let text = document.getElementById("mybox")
+    text.select();
+    navigator.clipboard.writeText(text)
+    document.getSelection().removeAllRanges();
+    props.showAlert("Text copied to Clipboard","success")
   }
 
   function handletobase46(){
     setText(btoa(text));
-    props.showAlert("Converted to Base64 from String","success")
+    props.showAlert("Base64 Converted to Text","success")
   }
 
   function handletoString(){
     setText(atob(text));
-    props.showAlert("Converted to String From Base64","success")
+    props.showAlert("Text Converted to Base64 ","success")
   }
 
   function handleChange(event) {
@@ -39,22 +47,23 @@ export default function TextForm(props) {
   return (
     <>
     <div className="container" style={{color:props.mode==="dark"?"white":"black"}}>
-      <h1>{props.heading}</h1>
+      <h2 className="mb-2">{props.heading}</h2>
       <div className="mb-3">
         <textarea className="form-control" id="mybox" rows="6" value={text} onChange={handleChange} style={{color:props.mode==="dark"?"white":"black",backgroundColor:props.mode==="dark"?"#4c5258":"white"}}></textarea>
       </div>
-    <button type="submit" className="btn btn-primary my-1 mx-1 " onClick={handletoUp}>Convert To Uppercase</button>
-    <button type="submit" className="btn btn-primary my-1 mx-1" onClick={handletoLo}>Convert To Lowercase</button>
-    <button type="submit" className="btn btn-primary my-1 mx-1" onClick={handletoCl}>Clear Text</button>
-    <button type="submit" className="btn btn-primary my-1 mx-1" onClick={handletobase46}>Convert To Base64 from String</button>
-    <button type="submit" className="btn btn-primary my-1 mx-1" onClick={handletoString}>Convert To String from Base64</button>
+    <button disabled = {text.length ===0} type="submit" className="btn btn-primary my-1 mx-1 " onClick={handletoUp}>Convert To Uppercase</button>
+    <button disabled = {text.length ===0} type="submit" className="btn btn-primary my-1 mx-1" onClick={handletoLo}>Convert To Lowercase</button>
+    <button disabled = {text.length ===0} type="submit" className="btn btn-primary my-1 mx-1" onClick={handletoCl}>Clear Text</button>
+    <button disabled = {text.length ===0} type="submit" className="btn btn-primary my-1 mx-1" onClick={handletoCopy}>Copy Text</button>
+    <button disabled = {text.length ===0} type="submit" className="btn btn-primary my-1 mx-1" onClick={handletobase46}>Convert To Base64 from String</button>
+    <button disabled = {text.length ===0} type="submit" className="btn btn-primary my-1 mx-1" onClick={handletoString}>Convert To String from Base64</button>
     </div>
     <div className="container my-2" style={{color:props.mode==="dark"?"white":"black"}}>
       <h2>Your text Summary</h2>
       <p>{text.split(" ").filter(word => {return(word.length !== 0)}).length} words and {text.length} characters</p>
-      <p>{0.008 * text.split(" ").length} Minutes to read </p>
+      <p>It will take {0.008 * text.split(" ").filter(word => {return(word.length !== 0)}).length} Minutes to read the Above Text</p>
       <h2>Preview</h2>
-      <p>{text.length>0?text:"Enter something to Preview it here."}</p>
+      <p>{text.length>0?text:"Nothing to Preview."}</p>
     </div>
     </>
   )
