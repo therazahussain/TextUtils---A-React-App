@@ -53,11 +53,11 @@ export default function TextForm(props) {
       <div className="mb-3">
         <textarea className="form-control" id="mybox" rows="6" value={text} onChange={handleChange} style={{color:props.mode==="dark"?"white":"black",backgroundColor:props.mode==="dark"?"#4c5258":"white"}}></textarea>
       </div>
-    <button type="submit" className="btn btn-primary mx-1 " onClick={handletoUp}>Convert To Uppercase</button>
-    <button type="submit" className="btn btn-primary mx-1" onClick={handletoLo}>Convert To Lowercase</button>
-    <button type="submit" className="btn btn-primary mx-1" onClick={handletoCl}>Clear Text</button>
-    <button type="submit" className="btn btn-primary mx-1" onClick={handletobase46}>Convert To Base64 from String</button>
-    <button type="submit" className="btn btn-primary mx-1" onClick={handletoString}>Convert To String from Base64</button>
+    <button type="submit" className="btn btn-primary my-1 mx-1 " onClick={handletoUp}>Convert To Uppercase</button>
+    <button type="submit" className="btn btn-primary my-1 mx-1" onClick={handletoLo}>Convert To Lowercase</button>
+    <button type="submit" className="btn btn-primary my-1 mx-1" onClick={handletoCl}>Clear Text</button>
+    <button type="submit" className="btn btn-primary my-1 mx-1" onClick={handletobase46}>Convert To Base64 from String</button>
+    <button type="submit" className="btn btn-primary my-1 mx-1" onClick={handletoString}>Convert To String from Base64</button>
     </div>
     <div className="container my-2" style={{color:props.mode==="dark"?"white":"black"}}>
       <h2>Your text Summary</h2>
