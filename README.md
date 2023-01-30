@@ -27,7 +27,8 @@ TextUtils is a React App in which /  Word and Character Counter / Analyze the Te
 #### Convert to Base64 from String
 <img width="945" alt="Screenshot 2023-01-30 073028" src="https://user-images.githubusercontent.com/98954425/215372677-815f687c-53d8-40c5-bb2f-ff96712c9b85.png">
 
-#### Convert to String from Base64<img width="927" alt="Screenshot 2023-01-30 073042" src="https://user-images.githubusercontent.com/98954425/215372711-f7c4f9cf-cdec-4b4f-936a-c70e5921506b.png">
+#### Convert to String from Base64
+<img width="927" alt="Screenshot 2023-01-30 073042" src="https://user-images.githubusercontent.com/98954425/215372711-f7c4f9cf-cdec-4b4f-936a-c70e5921506b.png">
 
 ### What you need to run this App
 1. React.js - For the Front end
