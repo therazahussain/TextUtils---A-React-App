@@ -28,3 +28,17 @@ TextUtils is a React App in which /  Word and Character Counter / Analyze the Te
 <img width="945" alt="Screenshot 2023-01-30 073028" src="https://user-images.githubusercontent.com/98954425/215372677-815f687c-53d8-40c5-bb2f-ff96712c9b85.png">
 
 #### Convert to String from Base64<img width="927" alt="Screenshot 2023-01-30 073042" src="https://user-images.githubusercontent.com/98954425/215372711-f7c4f9cf-cdec-4b4f-936a-c70e5921506b.png">
+
+### What you need to run this App
+1. React.js - For the Front end
+2. Node (<=13.12.0) 
+3. NPM (<=6.14.4) 
+4. MongoDB (<=4.2.0)
+
+### How to run this code
+1. Make sure MongoDB is running on your system
+2. Clone this repository
+3. Open command line in the cloned folder,
+4. To install dependencies, run npm install or yarn
+5. To run the application for development, run npm run development or yarn development
+6. Open localhost:3000 in the browser
