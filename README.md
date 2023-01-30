@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# TextUtils
+TextUtils is a React App in which /  Word and Character Counter / Analyze the Text / You can play around with the text you enter.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Output
 
-## Available Scripts
+#### HomePage 
+<img width="843" alt="Screenshot 2023-01-30 072719" src="https://user-images.githubusercontent.com/98954425/215372428-7bf3e3b0-2c8f-44f9-8d71-f534f825632b.png">
 
-In the project directory, you can run:
+#### DarkMode
+<img width="946" alt="Screenshot 2023-01-30 072708" src="https://user-images.githubusercontent.com/98954425/215372444-8c85bbb9-ff8c-43d3-92fd-40f27595a0f4.png">
 
-### `npm start`
+#### LightMode
+<img width="949" alt="Screenshot 2023-01-30 072734" src="https://user-images.githubusercontent.com/98954425/215372474-f720b097-3d8a-4498-a235-6c375b56e67f.png">
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### UpperCase
+<img width="884" alt="Screenshot 2023-01-30 072902" src="https://user-images.githubusercontent.com/98954425/215372547-58944c36-76b7-4eaf-b0a7-fb1d612cd1fe.png">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### LowerCase
+<img width="913" alt="Screenshot 2023-01-30 072919" src="https://user-images.githubusercontent.com/98954425/215372606-a9182979-5bc8-4fbd-a7a4-1bd05f25e1b8.png">
 
-### `npm test`
+#### Clear Text
+<img width="914" alt="Screenshot 2023-01-30 072933" src="https://user-images.githubusercontent.com/98954425/215372619-26adc71a-fe3d-47ea-8750-20cfe32a64aa.png">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Copy Text
+<img width="946" alt="Screenshot 2023-01-30 073013" src="https://user-images.githubusercontent.com/98954425/215372644-eab1d1e7-6d58-4915-9075-f098200e9bdf.png">
 
-### `npm run build`
+#### Convert to Base64 from String
+<img width="945" alt="Screenshot 2023-01-30 073028" src="https://user-images.githubusercontent.com/98954425/215372677-815f687c-53d8-40c5-bb2f-ff96712c9b85.png">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Convert to String from Base64<img width="927" alt="Screenshot 2023-01-30 073042" src="https://user-images.githubusercontent.com/98954425/215372711-f7c4f9cf-cdec-4b4f-936a-c70e5921506b.png">
